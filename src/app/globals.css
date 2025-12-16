@@ -1,37 +1,38 @@
 :root {
-    --font-main: 'Mulish', sans-serif;
+  --font-main: "Mulish", sans-serif;
 
-    --color-bg: #210A01;
-    --color-text: #A3A3A3;
-    --color-title: #FFF;
-    --color-accent: #FF6432;
+  --color-bg: #210a01;
+  --color-text: #a3a3a3;
+  --color-title: #fff;
+  --color-accent: #ff6432;
 }
 
 /* Базовые стили */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    font-family: var(--font-main);
-    color: var(--color-text);
-    background: var(--color-bg);
-    height: 100%;
-    padding: 60px 20px;
+html,
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-bg);
+  height: 100%;
+  padding: 60px 20px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .container {
-    max-width: 1254px;
-    margin: 0 auto;
+  max-width: 1254px;
+  margin: 0 auto;
 }
 
-.logo{
-    font-size: clamp(24px, calc(18.831px + 1.208vw), 34px);
-    color: var(--color-accent);
+.logo {
+  font-size: clamp(24px, calc(18.831px + 1.208vw), 34px);
+  color: var(--color-accent);
 }

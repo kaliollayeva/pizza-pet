@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import "./globals.css";
-import Header from '@/widgets/Header/Header'
+import Header from "@/widgets/Header/Header";
 
 const mulish = Mulish({
   variable: "--font-mulish",
-    weight: ["400", "600", "700"],
-    subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${mulish.variable}`}>
-      <Header/>
-      <div className="container">{children}</div>
+        <Header />
+        <div className="container">{children}</div>
       </body>
     </html>
   );

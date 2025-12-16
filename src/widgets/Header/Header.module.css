@@ -1,17 +1,17 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav{
-    max-width: 469px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.nav {
+  max-width: 469px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.link{
-    font-size: 18px;
-    color: var(--color-text);
+.link {
+  font-size: 18px;
+  color: var(--color-text);
 }

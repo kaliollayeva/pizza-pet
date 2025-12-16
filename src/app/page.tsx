@@ -4,9 +4,9 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-        <main>
-            <h1>Pet project started 🚀</h1>
-        </main>
+      <main>
+        <h1>Pet project started 🚀</h1>
+      </main>
     </div>
   );
 }
