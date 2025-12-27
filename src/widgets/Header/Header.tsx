@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
+import Button from '../../shared/ui/Button/Button';
 
 export default function Header() {
   return (
@@ -19,7 +20,10 @@ export default function Header() {
           About us
         </Link>
       </nav>
-      <p>Log In</p>
+
+      <div className={styles.button}>
+        <Button variant={'primary'}>Log in</Button>
+      </div>
     </div>
   );
 }
