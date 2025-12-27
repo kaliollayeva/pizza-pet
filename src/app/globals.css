@@ -5,6 +5,9 @@
   --color-text: #a3a3a3;
   --color-title: #fff;
   --color-accent: #ff6432;
+
+  --color-bg-button-primary: #fe9c1c;
+  --color-disabled-button: #a3a3a3;
 }
 
 /* Базовые стили */
@@ -16,11 +19,11 @@
 
 html,
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-main), sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   height: 100%;
-  padding: 60px 20px;
+  padding: 3.75rem 1.25rem;
 }
 
 a {
