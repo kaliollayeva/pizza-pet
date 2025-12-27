@@ -12,6 +12,11 @@
 }
 
 .link {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-text);
+}
+
+.button {
+  max-width: 136px;
+  width: 100%;
 }
