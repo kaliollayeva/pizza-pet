@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   children?: ReactNode;
 }
@@ -14,7 +14,7 @@ export default function Button({
   disabled,
   className = '',
   ...props
-}: ButtonProps) {
+}: Props) {
   const buttonClasses = [styles.button, styles[variant], className].filter(Boolean).join(' ');
 
   return (
