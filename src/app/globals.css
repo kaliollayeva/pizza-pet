@@ -23,7 +23,6 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   height: 100%;
-  padding: 3.75rem 1.25rem;
 }
 
 a {
