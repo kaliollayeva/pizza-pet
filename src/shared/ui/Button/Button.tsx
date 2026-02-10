@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './Button.module.css';
 
-type ButtonVariant = 'primary' | 'secondary' | 'outline';
+type ButtonVariant = '' | 'primary' | 'secondary' | 'outline';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -10,13 +10,14 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function Button({
   children,
-  variant = 'primary',
+  variant = '',
   disabled,
   className = '',
   ...props
 }: Props) {
-  const buttonClasses = [styles.button, styles[variant], className].filter(Boolean).join(' ');
-
+  const buttonClasses = [styles.button, variant ? styles[variant] : '', className]
+    .filter(Boolean)
+    .join(' ');
   return (
     <button className={buttonClasses} disabled={disabled} {...props}>
       {children}
