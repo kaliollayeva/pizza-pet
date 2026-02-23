@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './Button.module.css';
-
-type ButtonVariant = '' | 'primary' | 'secondary' | 'outline';
+import clsx from 'clsx';
+type ButtonVariant = 'primary' | 'secondary' | 'outline';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -10,14 +10,16 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function Button({
   children,
-  variant = '',
+  variant,
   disabled,
-  className = '',
+  className,
   ...props
 }: Props) {
-  const buttonClasses = [styles.button, variant ? styles[variant] : '', className]
-    .filter(Boolean)
-    .join(' ');
+  const buttonClasses = clsx(
+    styles.button,
+    variant && styles[variant], // Класс добавится, только если variant передан
+    className
+  );
   return (
     <button className={buttonClasses} disabled={disabled} {...props}>
       {children}
