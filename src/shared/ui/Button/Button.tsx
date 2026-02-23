@@ -8,13 +8,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
 }
 
-export default function Button({
-  children,
-  variant,
-  disabled,
-  className,
-  ...props
-}: Props) {
+export default function Button({ children, variant, disabled, className, ...props }: Props) {
   const buttonClasses = clsx(
     styles.button,
     variant && styles[variant], // Класс добавится, только если variant передан
