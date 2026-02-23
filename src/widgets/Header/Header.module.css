@@ -11,11 +11,16 @@
 .nav {
   max-width: 469px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+
 }
 
-.buttonsContsiner {
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.buttonsContainer {
   display: flex;
   align-items: center;
   gap: 26px;
@@ -74,6 +79,9 @@
   }
   .navOpen {
     display: flex;
+  }
+  .navOpen ul{
+    flex-direction: column;
   }
   .buttonLogin {
     display: none;

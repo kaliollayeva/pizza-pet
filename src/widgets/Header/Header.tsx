@@ -12,30 +12,40 @@ export default function Header() {
     <header className={styles.header}>
       <h2 className="logo">pizzashop</h2>
       <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ''}`}>
-        <Link href="/" className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}>
-          Home
-        </Link>
-        <Link
-          href="/menu/page"
-          className={`${styles.link} ${pathname === '/menu/page' ? styles.active : ''}`}
-        >
-          Menu
-        </Link>
-        <Link
-          href="/events/page"
-          className={`${styles.link} ${pathname === '/events/page' ? styles.active : ''}`}
-        >
-          Events
-        </Link>
-        <Link
-          href="/about/page"
-          className={`${styles.link} ${pathname === '/about/page' ? styles.active : ''}`}
-        >
-          About us
-        </Link>
+        <ul>
+          <li>
+            <Link href="/" className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/menu/page"
+              className={`${styles.link} ${pathname === '/menu/page' ? styles.active : ''}`}
+            >
+              Menu
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/events/page"
+              className={`${styles.link} ${pathname === '/events/page' ? styles.active : ''}`}
+            >
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about/page"
+              className={`${styles.link} ${pathname === '/about/page' ? styles.active : ''}`}
+            >
+              About us
+            </Link>
+          </li>
+        </ul>
       </nav>
 
-      <div className={styles.buttonsContsiner}>
+      <div className={styles.buttonsContainer}>
         <div className={styles.buttonLogin}>
           <Button variant={'primary'}>Log in</Button>
         </div>
