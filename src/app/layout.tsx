@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
 import './globals.css';
 import Header from '@/widgets/Header/Header';
+import Footer from '@/widgets/Footer/Footer';
 
 const mulish = Mulish({
   variable: '--font-mulish',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${mulish.variable}`}>
         <Header />
         <div className="container">{children}</div>
+        <Footer />
       </body>
     </html>
   );

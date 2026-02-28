@@ -1,0 +1,91 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+  margin: 0 auto;
+  padding: 70px 0;
+  background-color: #170a00;
+}
+
+.linksContent {
+  display: flex;
+  max-width: 1252px;
+  gap: 84px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav {
+  display: grid;
+  gap: 84px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.navColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.navTitle {
+  font-size: clamp(16px, calc(14.947px + 0.329vw), 19px);
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navLink {
+  color: var(--color-text-links);
+  font-size: clamp(16px, calc(14.947px + 0.329vw), 19px);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+}
+
+.contactsContent {
+  max-width: 1252px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.number {
+  color: var(--color-accent);
+  font-size: clamp(15px, calc(13.286px + 0.536vw), 21px);
+}
+
+.mediaContainer {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 25px;
+    gap: 60px;
+  }
+  .linksContent {
+    flex-direction: column;
+    gap: 58px;
+  }
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .navColumn {
+    gap: 14px;
+  }
+  .navList {
+    gap: 9px;
+  }
+  .mediaContainer svg {
+    width: 20px;
+    height: 20px;
+  }
+}
