@@ -29,6 +29,7 @@
 }
 
 .navTitle {
+  color: var(--color-text);
   font-size: clamp(16px, calc(14.947px + 0.329vw), 19px);
 }
 
