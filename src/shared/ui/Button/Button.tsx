@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './Button.module.css';
-
+import clsx from 'clsx';
 type ButtonVariant = 'primary' | 'secondary' | 'outline';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,15 +8,12 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
 }
 
-export default function Button({
-  children,
-  variant = 'primary',
-  disabled,
-  className = '',
-  ...props
-}: Props) {
-  const buttonClasses = [styles.button, styles[variant], className].filter(Boolean).join(' ');
-
+export default function Button({ children, variant, disabled, className, ...props }: Props) {
+  const buttonClasses = clsx(
+    styles.button,
+    variant && styles[variant], // Класс добавится, только если variant передан
+    className
+  );
   return (
     <button className={buttonClasses} disabled={disabled} {...props}>
       {children}

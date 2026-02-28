@@ -9,6 +9,8 @@
   font-weight: 500;
   font-size: 1.125rem;
   color: white;
+  padding: 0.75rem 0;
+  background-color: transparent;
 }
 
 .button:disabled {
