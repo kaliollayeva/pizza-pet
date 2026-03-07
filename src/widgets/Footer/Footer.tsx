@@ -1,7 +1,9 @@
 import styles from './Footer.module.css';
 import Link from 'next/link';
 import { navConfig } from './/constants';
-import { InstaIcon, FacebookIcon, TwitterIcon } from './assets/svgs';
+import { TwitterIcon } from '@/shared/ui/icons/Twitter';
+import { InstaIcon } from '@/shared/ui/icons/Instagram';
+import { FacebookIcon } from '@/shared/ui/icons/Facebook';
 
 export default function Footer() {
   return (
