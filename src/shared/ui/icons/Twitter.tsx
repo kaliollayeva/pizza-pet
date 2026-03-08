@@ -1,4 +1,10 @@
-export const TwitterIcon = ({ className }) => (
+import { ComponentProps, FC } from 'react';
+
+interface IconProps extends ComponentProps<'svg'> {
+  size?: number;
+}
+
+export const TwitterIcon: FC<IconProps> = ({ className, size = 32, ...props }) => (
   <svg
     version="1.1"
     id="Layer_1"
@@ -6,11 +12,12 @@ export const TwitterIcon = ({ className }) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
-    width="32"
-    height="32"
+    width={size}
+    height={size}
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     className={className}
+    {...props}
   >
     <style type="text/css">
       {`.st0{fill:none;stroke:#000000;stroke-width:4.3562;stroke-miterlimit:10;}
