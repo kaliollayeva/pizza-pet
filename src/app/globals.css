@@ -5,6 +5,7 @@
   --color-text: #a3a3a3;
   --color-title: #fff;
   --color-accent: #ff6432;
+  --color-text-links: #515151;
 
   --color-bg-button-primary: #fe9c1c;
   --color-disabled-button: #a3a3a3;
@@ -27,6 +28,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
