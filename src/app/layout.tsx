@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`${mulish.variable}`}>
         <Header />
-        <div className="container">{children}</div>
+        <main className="container">{children}</main>
         <Footer />
       </body>
     </html>
