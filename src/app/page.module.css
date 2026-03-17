@@ -1,5 +1,4 @@
 .home {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
@@ -50,7 +49,7 @@
 .videoContainer {
   position: relative;
   max-width: 272px;
-  aspect-ratio: 272 / 193; /* или 100vh */
+  aspect-ratio: 272 / 193;
   overflow: hidden;
   border-radius: 23px;
   background-color: black;
@@ -117,7 +116,7 @@
   height: 0;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-left: 20px solid var(--color-accent); /* Рисуем треугольник на CSS */
+  border-left: 20px solid var(--color-accent);
   margin-left: 5px;
 }
 
@@ -181,15 +180,15 @@
 .primaryWrapper {
   max-width: 229px;
   width: 100%;
-  z-index: 2; /* Обязательно, чтобы кнопка была сверху */
-  margin-right: -40px; /* Величина "нахлеста" (подбери под свой дизайн) */
+  z-index: 2;
+  margin-right: -40px;
 }
 
 .secondaryWrapper {
   box-sizing: border-box;
   max-width: 229px;
   width: 100%;
-  z-index: 1; /* Кнопка будет под левой кнопкой */
+  z-index: 1;
 }
 
 @media (max-width: 990px) {
@@ -209,7 +208,7 @@
   }
   .bannerImg::after {
     max-width: 129px;
-    right: -50px;
+    right: -40px;
     top: -60px;
   }
 }
