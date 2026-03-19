@@ -7,7 +7,7 @@
   border: none;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: clamp(16px, calc(13.818px + 0.682vw), 22px);
   color: white;
   padding: 0.75rem 0;
   background-color: transparent;
@@ -23,6 +23,7 @@
   background-color: var(--color-bg-button-primary);
   white-space: nowrap;
   padding: 0.75rem 0;
+  border: 1px solid var(--color-bg-button-primary);
 }
 
 .secondary {
