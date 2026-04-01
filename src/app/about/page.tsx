@@ -26,9 +26,9 @@ export default function About() {
       </div>
 
       <div className={styles.bannerContainer}>
-        <img className={styles.fries} src="/fries1.png" />
+        <img className={styles.fries} src="/fries1.png" alt="fries" />
         <div className={styles.mainImgWrapper}></div>
-        <img className={styles.pizza} src="/pizza1.png" />
+        <img className={styles.pizza} src="/pizza1.png" alt="pizza"/>
       </div>
     </section>
   );

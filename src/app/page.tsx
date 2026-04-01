@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       <div className={styles.bannerContainer}>
         <div className={styles.bannerImg}>
-          <img src="/mainrightimg.webp" />
+          <img src="/mainrightimg.webp" alt="mainrightimg"/>
         </div>
       </div>
     </section>
