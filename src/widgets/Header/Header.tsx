@@ -20,24 +20,24 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/menu/page"
-              className={`${styles.link} ${pathname === '/menu/page' ? styles.active : ''}`}
+              href="/menu"
+              className={`${styles.link} ${pathname === '/menu' ? styles.active : ''}`}
             >
               Menu
             </Link>
           </li>
           <li>
             <Link
-              href="/events/page"
-              className={`${styles.link} ${pathname === '/events/page' ? styles.active : ''}`}
+              href="/events"
+              className={`${styles.link} ${pathname === '/events' ? styles.active : ''}`}
             >
               Events
             </Link>
           </li>
           <li>
             <Link
-              href="/about/page"
-              className={`${styles.link} ${pathname === '/about/page' ? styles.active : ''}`}
+              href="/about"
+              className={`${styles.link} ${pathname === '/about' ? styles.active : ''}`}
             >
               About us
             </Link>
