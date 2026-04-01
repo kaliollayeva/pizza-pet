@@ -1,0 +1,114 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  max-width: 590px;
+  align-items: center;
+}
+
+.leftImgCont {
+  max-width: 490px;
+  width: 100%;
+}
+
+.leftImgCont img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bannerContainer {
+  position: relative;
+  max-width: 567px;
+  max-height: 541px;
+  aspect-ratio: 567 / 541;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  margin-right: 80px;
+  box-sizing: border-box;
+}
+.mainImgWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  background-image: url('/aboutusrightimg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainImgWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fries {
+  position: absolute;
+  bottom: -80px;
+  left: -110px;
+  display: block;
+  max-width: 203px;
+  max-height: 215px;
+  z-index: 2;
+}
+
+.pizza {
+  position: absolute;
+  top: -80px;
+  right: -100px;
+  display: block;
+  max-width: 203px;
+  max-height: 215px;
+  z-index: 2;
+}
+
+@media (max-width: 990px) {
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 70px;
+    padding: 30px 0;
+  }
+  .bannerContainer {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentContainer {
+    align-items: start;
+  }
+  .fries {
+    bottom: -30px;
+    left: -50px;
+    max-width: 100px;
+    max-height: 107px;
+  }
+
+  .pizza {
+    top: -30px;
+    right: -30px;
+    max-width: 117px;
+    max-height: 117px;
+  }
+}
