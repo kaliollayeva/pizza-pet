@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <section className={styles.home}>
       <div className={styles.contentContainer}>
-        <h1 className={styles.title}>
+        <h1 className="title">
           The Fastest <br /> Pizza 🍕 Delivery
         </h1>
-        <p className={styles.text}>
+        <p className="standartText">
           We will deliver juicy pizza for your family in 30 minutes, if the courier is late -{' '}
           <span className={styles.textAccent}>pizza is free!</span>
         </p>
         <div className={styles.textBottomContainer}>
           <div className={styles.videoContentContainer}>
-            <p className={styles.text}>Cooking process:</p>
+            <p className="standartText">Cooking process:</p>
             <div className={styles.videoContainer}>
               {!isPlaying ? (
                 <div className={styles.videoOverlay}>
