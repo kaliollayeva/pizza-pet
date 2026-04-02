@@ -44,3 +44,15 @@ li {
   font-size: clamp(24px, calc(18.831px + 1.208vw), 34px);
   color: var(--color-accent);
 }
+
+.title {
+  font-size: clamp(48px, calc(40.281px + 2.412vw), 70px);
+  color: var(--color-title);
+  margin-bottom: 7px;
+  font-weight: 800;
+}
+
+.standartText {
+  max-width: 411px;
+  font-size: clamp(14px, calc(12.571px + 0.446vw), 19px);
+}
