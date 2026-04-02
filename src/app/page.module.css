@@ -110,14 +110,11 @@
 
 .bannerContainer {
   max-width: 456px;
-  width: 100%;
   flex: 1;
-  aspect-ratio: 456/683;
 }
 
 .bannerImg {
   position: relative;
-  width: 100%;
   border-radius: 46px;
 }
 
@@ -187,7 +184,7 @@
     padding: 30px 0;
   }
   .bannerContainer {
-    max-width: 243px;
+    /*max-width: 243px;*/
   }
   .bannerImg::before {
     max-width: 110px;
@@ -214,5 +211,9 @@
   }
   .primaryWrapper {
     margin-right: -30px;
+  }
+  .bannerImg img {
+    width: 243px;
+    height: 365px;
   }
 }

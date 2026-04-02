@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
-import pizzaGroup from '../../../public/pizzaGroup.png';
 
 export default function About() {
   return (
@@ -15,7 +14,7 @@ export default function About() {
           other major cities of Russia.
         </p>
         <div className={styles.leftImgCont}>
-          <Image src={pizzaGroup} alt="pizzaGroup" />
+          <Image src="/pizzaGroup.png" alt="pizzaGroup" width={490} height={189} />
         </div>
 
         <p className="standartText">
@@ -26,9 +25,9 @@ export default function About() {
       </div>
 
       <div className={styles.bannerContainer}>
-        <img className={styles.fries} src="/fries1.png" alt="fries" />
-        <div className={styles.mainImgWrapper}></div>
-        <img className={styles.pizza} src="/pizza1.png" alt="pizza"/>
+        <Image className={styles.fries} src="/fries1.png" alt="fries" width={203} height={215} />
+        <div className={styles.mainImgWrapper} />
+        <Image className={styles.pizza} src="/pizza1.png" alt="pizza" width={203} height={215} />
       </div>
     </section>
   );

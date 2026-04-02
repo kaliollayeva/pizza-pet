@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styles from './page.module.css';
 import Button from '@/shared/ui/Button/Button';
 
@@ -58,7 +59,7 @@ export default function Home() {
       </div>
       <div className={styles.bannerContainer}>
         <div className={styles.bannerImg}>
-          <img src="/mainrightimg.webp" alt="mainrightimg"/>
+          <Image src="/mainrightimg.webp" alt="mainrightimg" width={456} height={683} />
         </div>
       </div>
     </section>

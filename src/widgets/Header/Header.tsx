@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 import Button from '../../shared/ui/Button/Button';
+import clsx from 'clsx';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Header() {
           <li>
             <Link
               href="/menu"
-              className={`${styles.link} ${pathname === '/menu' ? styles.active : ''}`}
+              className={clsx(styles.link, { [styles.active]: pathname === '/menu' })}
             >
               Menu
             </Link>
