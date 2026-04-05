@@ -11,9 +11,8 @@ interface Pizza {
   imageUrl: string;
   isPopular: boolean;
 }
-type PizzaList = Pizza[];
 
-export const pizzas: PizzaList = [
+export const pizzas: Pizza[] = [
   {
     id: 1,
     name: 'Venecia Meat',

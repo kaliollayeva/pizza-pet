@@ -145,32 +145,32 @@
   box-shadow: 0 4px 12px rgba(255, 97, 38, 0.3);
 }
 
-@media screen and (max-width: 768px){
-  .card{
+@media screen and (max-width: 768px) {
+  .card {
     padding: 80px 16px 20px;
   }
-  .pizzaExample{
+  .pizzaExample {
     max-width: 97px;
   }
-  .cardContentContainer{
+  .cardContentContainer {
     gap: 12px;
   }
-  .sizeCircle{
+  .sizeCircle {
     width: 24px;
     height: 24px;
     font-size: 8px;
   }
-  .currency{
+  .currency {
     font-size: 10px;
     right: -8px;
   }
-  .quantityContainer{
+  .quantityContainer {
     gap: 6px;
   }
-  .quantityContainer p{
+  .quantityContainer p {
     font-size: 14px;
   }
-  .quantityButton{
+  .quantityButton {
     height: 14px;
     width: 14px;
     font-size: 10px;

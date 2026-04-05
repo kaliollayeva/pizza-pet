@@ -13,7 +13,7 @@
   aspect-ratio: 1248/286;
   border-radius: 34px;
   overflow: hidden;
-  background-image: url('/menuBanner.jpg');
+  background-image: url('/menuBanner.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,7 +40,7 @@
   pointer-events: none;
 }
 
-.categoryList{
+.categoryList {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -58,23 +58,23 @@
   margin-top: 77px;
 }
 
-.categoryButton{
+.categoryButton {
   padding: 15px 0;
   font-size: 20px;
 }
 
-@media screen and (max-width: 990px){
-  .categoryList{
+@media screen and (max-width: 990px) {
+  .categoryList {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
-  .categoryList li{
+  .categoryList li {
     min-width: 80px;
     max-width: 140px;
     width: 100%;
   }
-  .categoryButton{
+  .categoryButton {
     width: 100%;
     padding: 12px 0;
     font-size: 16px;
@@ -82,7 +82,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu{
+  .menu {
     gap: 25px;
   }
   .banner {
@@ -92,7 +92,7 @@
     gap: 13px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .cardList li{
+  .cardList li {
     margin-top: 40px;
   }
 }

@@ -5,8 +5,7 @@ import Button from '@/shared/ui/Button/Button';
 
 export default function Menu() {
   return (
-    <div className={styles.menu}>
-
+    <section className={styles.menu}>
       <h2 className="title">Menu</h2>
 
       <ul className={styles.categoryList}>
@@ -37,38 +36,38 @@ export default function Menu() {
         </li>
       </ul>
 
-        <ul className={styles.cardList}>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-        </ul>
+      <ul className={styles.cardList}>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+      </ul>
 
       <div className={styles.banner}>
         <p className={styles.bannerText}>MOST POPULAR PIZZA</p>
       </div>
-        <ul className={styles.cardList}>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-          <li>
-            <Card />
-          </li>
-        </ul>
-    </div>
+      <ul className={styles.cardList}>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+      </ul>
+    </section>
   );
 }
