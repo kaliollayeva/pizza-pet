@@ -5,12 +5,15 @@
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: clamp(16px, calc(13.818px + 0.682vw), 22px);
+  border-radius: 84px;
   color: white;
   padding: 0.75rem 0;
   background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
 }
 
 .button:disabled {
@@ -20,16 +23,13 @@
 }
 
 .primary {
-  background-color: var(--color-bg-button-primary);
+  background: var(--color-bg-accent);
   white-space: nowrap;
-  padding: 0.75rem 0;
-  border: 1px solid var(--color-bg-button-primary);
 }
 
 .secondary {
   background-color: var(--color-bg);
   box-shadow: 0 9px 40px 0 #ff6b000f;
-  padding: 1.25rem 0;
 }
 
 .outline {
