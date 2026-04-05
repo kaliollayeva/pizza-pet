@@ -5,7 +5,7 @@ import styles from './Card.module.css';
 
 export default function Card() {
   return (
-    <div className={styles.card}>
+    <article className={styles.card}>
       <div className={styles.cardImageContainer}>
         <Image
           src="/pizzaExample.png"
@@ -13,11 +13,11 @@ export default function Card() {
           className={styles.pizzaExample}
           width={159}
           height={157}
-        ></Image>
+        />
       </div>
 
       <div className={styles.cardContentContainer}>
-        <h6 className={styles.pizzaName}>Argentina</h6>
+        <h3 className={styles.pizzaName}>Argentina</h3>
 
         <p className={styles.pizzaIngredients}>
           Filling: onion, potato, tomato, mushrooms, cheese, olives, meat
@@ -41,8 +41,7 @@ export default function Card() {
         </div>
         <div className={styles.priceContainer}>
           <p className={styles.price}>
-            {' '}
-            8,35 <span className={styles.currency}>$</span>{' '}
+            8,35 <span className={styles.currency}>$</span>
           </p>
           <div className={styles.quantityContainer}>
             <button className={styles.quantityButton}>-</button>
@@ -54,6 +53,6 @@ export default function Card() {
           <Button variant={'primary'}>Order Now</Button>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
