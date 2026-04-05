@@ -9,6 +9,7 @@
 
   --color-bg-button-primary: #fe9c1c;
   --color-disabled-button: #a3a3a3;
+  --color-bg-accent: linear-gradient(135deg, #ff9d2f, #ff6126);
 }
 
 /* Базовые стили */
