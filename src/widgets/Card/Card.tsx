@@ -3,13 +3,13 @@ import Image from 'next/image';
 import Button from '@/shared/ui/Button/Button';
 import styles from './Card.module.css';
 import { useState } from 'react';
-import {Pizza} from '../../app/menu/data'
+import { Pizza } from '../../app/menu/data';
 
 const pizzaSizes = [
-  {value: 22, scale: 0.85},
-  {value: 28, scale: 1},
-  {value: 33, scale: 1.15},
-]
+  { value: 22, scale: 0.85 },
+  { value: 28, scale: 1 },
+  { value: 33, scale: 1.15 },
+];
 
 interface Props {
   data: Pizza;
@@ -17,22 +17,22 @@ interface Props {
 }
 
 export default function Card({ data, listPrefix }: Props) {
-  const {id, name, description, prices, imageUrl} = data;
+  const { id, name, description, prices, imageUrl } = data;
 
   const [checkedSize, setCheckedSize] = useState<number>(28);
-  const currentScale = pizzaSizes.find(s=>s.value === checkedSize)?.scale || 1;
+  const currentScale = pizzaSizes.find((s) => s.value === checkedSize)?.scale || 1;
   const [count, setCount] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
   const increment = () => {
-    setCount(prevCount => prevCount + 1);
-  }
+    setCount((prevCount) => prevCount + 1);
+  };
   const decrement = () => {
     setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
-  }
-  const handleOrder = () =>{
+  };
+  const handleOrder = () => {
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 3000);
-  }
+  };
   const totalPrice = prices[checkedSize as keyof typeof prices] * count;
 
   return (
@@ -46,7 +46,7 @@ export default function Card({ data, listPrefix }: Props) {
           height={157}
           style={{
             transform: `scale(${currentScale})`,
-            transition: 'transform 0.3s ease-in-out'
+            transition: 'transform 0.3s ease-in-out',
           }}
         />
       </div>
@@ -54,16 +54,18 @@ export default function Card({ data, listPrefix }: Props) {
       <div className={styles.cardContentContainer}>
         <h3 className={styles.pizzaName}>{name}</h3>
 
-        <p className={styles.pizzaIngredients}>
-          {description}
-        </p>
+        <p className={styles.pizzaIngredients}>{description}</p>
 
         <div className={styles.sizeSelector}>
           {pizzaSizes.map((size) => (
             <label key={size.value} className={styles.sizePicker}>
-              <input type="radio" name={`size-${listPrefix}-${id}`} value={size.value}
-                     checked={checkedSize === size.value}
-                     onChange={() => setCheckedSize(size.value)} />
+              <input
+                type="radio"
+                name={`size-${listPrefix}-${id}`}
+                value={size.value}
+                checked={checkedSize === size.value}
+                onChange={() => setCheckedSize(size.value)}
+              />
               <span className={styles.sizeCircle}>{size.value}</span>
             </label>
           ))}
@@ -73,11 +75,13 @@ export default function Card({ data, listPrefix }: Props) {
             {totalPrice} <span className={styles.currency}>$</span>
           </p>
           <div className={styles.quantityContainer}>
-            <button className={styles.quantityButton}
-            onClick={decrement}>-</button>
+            <button className={styles.quantityButton} onClick={decrement}>
+              -
+            </button>
             <p>{count}</p>
-            <button className={styles.quantityButton}
-            onClick={increment}>+</button>
+            <button className={styles.quantityButton} onClick={increment}>
+              +
+            </button>
           </div>
         </div>
         <div className={styles.buttonIngredientsContainer}>
