@@ -1,12 +1,11 @@
-type PizzaCategory = 'Meat' | 'Vegetarian' | 'Sea products' | 'Mushroom';
+export type PizzaCategory = 'Meat' | 'Vegetarian' | 'Sea products' | 'Mushroom';
 type PizzaSize = 22 | 28 | 33;
-interface Pizza {
+export interface Pizza {
   id: number;
   name: string;
   category: PizzaCategory;
   description: string;
   sizes: PizzaSize[];
-  // Используем Record для маппинга размера к цене
   prices: Record<PizzaSize, number>;
   imageUrl: string;
   isPopular: boolean;

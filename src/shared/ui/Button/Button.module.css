@@ -17,7 +17,7 @@
 }
 
 .button:disabled {
-  background-color: transparent;
+  background: transparent;
   border: 1px solid var(--color-disabled-button);
   color: var(--color-disabled-button);
 }
