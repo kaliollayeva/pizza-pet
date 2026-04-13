@@ -1,15 +1,4 @@
-export type PizzaCategory = 'Meat' | 'Vegetarian' | 'Sea products' | 'Mushroom';
-type PizzaSize = 22 | 28 | 33;
-export interface Pizza {
-  id: number;
-  name: string;
-  category: PizzaCategory;
-  description: string;
-  sizes: PizzaSize[];
-  prices: Record<PizzaSize, number>;
-  imageUrl: string;
-  isPopular: boolean;
-}
+import { Pizza } from './types';
 
 export const pizzas: Pizza[] = [
   {

@@ -3,7 +3,8 @@ import { useMemo, useState } from 'react';
 import styles from './page.module.css';
 import Card from '@/widgets/Card/Card';
 import Button from '@/shared/ui/Button/Button';
-import { pizzas, PizzaCategory } from '@/app/menu/data';
+import { pizzas } from '@/entities/pizza/model/mock';
+import { PizzaCategory } from '@/entities/pizza/model/types';
 
 const ITEMS_PER_PAGE = 4;
 
@@ -12,7 +13,7 @@ export default function Menu() {
   const [visibleMainCount, setVisibleMainCount] = useState(ITEMS_PER_PAGE);
   const [visiblePopularCount, setVisiblePopularCount] = useState(ITEMS_PER_PAGE);
 
-  const categoties = useMemo(() => {
+  const categories = useMemo(() => {
     const uniqueCategories = Array.from(new Set(pizzas.map((pizza) => pizza.category)));
     return ['All', ...uniqueCategories] as const;
   }, []);
@@ -35,7 +36,7 @@ export default function Menu() {
       <h2 className="title">Menu</h2>
 
       <ul className={styles.categoryList}>
-        {categoties.map((category) => (
+        {categories.map((category) => (
           <li key={category}>
             <Button
               variant={activeCategory === category ? 'primary' : 'secondary'}
