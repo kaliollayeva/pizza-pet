@@ -63,6 +63,12 @@
   font-size: 20px;
 }
 
+.showMoreWrapper {
+  max-width: 190px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 990px) {
   .categoryList {
     display: flex;
