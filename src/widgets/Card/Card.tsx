@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Button from '@/shared/ui/Button/Button';
 import styles from './Card.module.css';
 import { useState } from 'react';
-import { Pizza } from '@/entities/pizza/model/types';
+import { Pizza } from '@/entities/pizza';
 
 const pizzaSizes = [
   { value: 22, scale: 0.85 },

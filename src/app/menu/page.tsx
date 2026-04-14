@@ -3,8 +3,7 @@ import { useMemo, useState } from 'react';
 import styles from './page.module.css';
 import Card from '@/widgets/Card/Card';
 import Button from '@/shared/ui/Button/Button';
-import { pizzas } from '@/entities/pizza/model/mock';
-import { PizzaCategory } from '@/entities/pizza/model/types';
+import { pizzas, PizzaCategory } from '@/entities/pizza';
 
 const ITEMS_PER_PAGE = 4;
 
